@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Become a Donor - DonorPoint</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <img src="media/background.png" alt="Background" class="bg-image" />
+
+  <!-- Navigation Links -->
+  <header class="top-header">
+    <div class="logo-container">
+      <img src="media/logo.png" alt="DonorPoint Logo" class="logo" />
+      <span class="site-name">DonorPoint</span>
+    </div>
+    <nav class="top-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="about.html" class="nav-link">About</a>
+
+    </nav>
+  </header>
+
+  <main class="home-container">
+    <h2 class="title">Donor Registration</h2>
+
+    <form id="donorForm">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="number" id="age" placeholder="Age (18-65)" min="18" max="65" required />
+      <select id="bloodGroup" required>
+        <option value="">Select Blood Group</option>
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>O+</option>
+        <option>O-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+      </select>
+      <input type="text" id="city" placeholder="City" required />
+      <input type="tel" id="contact" placeholder="Contact Number (03xxxxxxxxx or +92xxxxxxxxxx)" required />
+      <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <p id="message" class="message"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel - DonorPoint</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background Image -->
+  <img src="media/background.png" alt="Background" class="bg-image" />
+
+  <!-- Header with Home & Contact Links -->
+  <header class="top-header">
+    <div class="logo-container">
+      <img src="media/logo.png" alt="DonorPoint Logo" class="logo" />
+      <span class="site-name">DonorPoint</span>
+    </div>
+    <nav class="top-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="about.html" class="nav-link">About</a>
+
+    </nav>
+  </header>
+
+  <!-- Admin Content -->
+  <main class="home-container">
+    <h2 class="title">All Donors</h2>
+    <div id="donorList" class="donor-list-placeholder">
+      <!-- Populated by JavaScript -->
+    </div>
+  </main>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
